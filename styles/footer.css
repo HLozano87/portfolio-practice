@@ -1,0 +1,6 @@
+.footer {
+  text-align: center;
+  font-style: italic;
+  color: var(--border-color);
+  padding: 1em;
+}
