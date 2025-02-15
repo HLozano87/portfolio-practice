@@ -3,4 +3,11 @@
   font-style: italic;
   color: var(--border-color);
   padding: 1em;
+  .socials {
+    padding-bottom: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
 }
