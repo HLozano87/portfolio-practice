@@ -1,0 +1,29 @@
+:root {
+  /* colores y fuente temporal */
+  --bg-color: #fff;
+  --main-text-color: #000;
+  --main-brand-color: #e50914;
+  --main-brand-color-light: #e44c54;
+  --border-color: #4b5563;
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 16px;
+}
+
+.main-bg {
+  background-color: var(--bg-color);
+  color: var(--main-text-color);
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
