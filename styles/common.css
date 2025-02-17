@@ -16,6 +16,10 @@
 
 a {
   text-decoration: none;
+  color: var(--main-text-color);
+  border-radius: 3px;
+  padding: 0px 5px;
+  transition: 1s;
 }
 
 p {
@@ -27,3 +31,10 @@ p {
   box-sizing: border-box;
 }
 
+a:hover {
+  background-color: rgb(20, 141, 44);
+  color: white;
+  transition: 0.5s;
+  /* border-radius: 2px; */
+  margin-top: 4px;
+}
