@@ -1,16 +1,17 @@
 .header {
-  background-color: rgb(72, 152, 82);
+  background-color: var(--main-text-color);
   position: sticky;
   top: 0px;
   z-index: 1;
-  padding: 2em;
+  padding: 1em;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
   
   img {
+    padding: 2em;
     display: flex;
     border-radius: 25%;
     max-width: 250px;
@@ -18,12 +19,13 @@
   }
 }
 .title {
+  padding: 10px;
+  text-align: ce;
   color: white;
   font-size: 2em;
   margin: 0 auto;
-  padding: 0;
   display: flex;
-  justify-items: center;
+  justify-content: center;
   align-items: center;
 }
 
@@ -31,11 +33,12 @@
   display: flex;
   justify-items: center;
   align-content: center;
-  ul.lister {
-    padding: 0;
+  .lister {
+    margin: 0;
+    padding: 10px;
     font-size: 1.1rem;
     display:flex;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
     list-style: none;
     gap: 20px;
@@ -43,6 +46,7 @@
   a {
     color: white;
   }
+  
 }
 ul.header {
   align-content: center;

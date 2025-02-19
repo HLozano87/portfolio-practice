@@ -1,7 +1,7 @@
 .footer {
   text-align: center;
   font-style: italic;
-  color: var(--border-color);
+  color: var(--footer-text-color);
   padding: 1em;
   .socials {
     padding-bottom: 1em;
