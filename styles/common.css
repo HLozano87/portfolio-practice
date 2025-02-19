@@ -14,17 +14,29 @@
   color: var(--main-text-color);
 }
 
+.main {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 768px;
+}
+
 a {
+  padding: 0;
+  margin: 0;
   text-decoration: none;
   color: var(--main-text-color);
   border-radius: 3px;
-  padding: 0px 5px;
+  /* padding: 0px 5px; */
   transition: 1s;
 }
 
 p {
   margin: 0;
   margin-bottom: 1rem;
+}
+
+footer img {
+  display: block;
 }
 
 * {
@@ -36,5 +48,15 @@ a:hover {
   color: white;
   transition: 0.5s;
   /* border-radius: 2px; */
-  margin-top: 4px;
+  /* margin-top: 4px; */
 }
+/* 
+@media screen and ( width > 768px ) {
+  body {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;    
+  }
+} */
