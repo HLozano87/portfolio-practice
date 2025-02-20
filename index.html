@@ -20,7 +20,7 @@
       <nav class="nav-container">
         <ul class="lister">
           <li>
-            <a href="#portfolio">Proyects</a>
+            <a href="#proyects">Proyects</a>
           </li>
           <li>
             <a href="#skills">Skills</a>
@@ -35,7 +35,7 @@
   <hr>
 
   <main class="main">
-    <section class="bio">
+    <section class="bio" id="bio">
       <div>
         <h2>Bio</h2>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel architecto debitis voluptate! Velit, ipsum sapiente, perferendis officia a exercitationem repellat accusamus cupiditate facere sunt nisi nemo temporibus dolores iure necessitatibus.</p>
@@ -48,17 +48,69 @@
         </div>
     </section>
 
-    <section class="banner">
+    <section class="banner" id="proyects">
       <div class="imagen"></div>
       <div class="content-portfolio">
-      <h2 class="heading-2" id="portfolio">Portfolio</h2>
+      <h2 class="heading-2">Portfolio</h2>
       </div>
     </section>
 
     <section>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore blanditiis voluptatum vitae magnam incidunt et minus rem voluptatem molestias nemo unde molestiae optio quae, necessitatibus laboriosam quod iure, enim esse. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores et nisi, nesciunt minus sed at voluptatibus natus odit. Recusandae adipisci odio consequatur ullam natus soluta veritatis repellendus perferendis quis quas.</p>
     </section>
-    <button type="submit">Prueba color</button>
+
+    <form for="./contact" id="contact" method="post">
+      <h3>Contacto</h3>
+      <div class="form-contact">
+        <label for="name">Nombre</label>
+        <input type="text" pattern="^[a-zA-Z]+(?:\s[a-zA-Z]+)*$" title="Formatos admitidos: 'Jose o Jose Antonio'" name="name" id="name" required placeholder="Pon tu nombre">
+      </div>
+      <div class="form-contact">
+        <label for="surname">Apellido</label>
+        <input type="text" pattern="^[a-zA-Z]+(?:\s[a-zA-Z]+)*$" title="Formatos admitido: 'Perez' o 'Perez Gomez'" name="surname" id="surname" required placeholder="Pon tu apellido">
+      </div>
+      <div class="form-contact">
+        <label for="tel">Teléfono</label>
+        <input type="tel" pattern="^\+[0-9]{3}\s[0-9]{3}-[0-9]{3}-[0-9]{3}$" title="Formato: +000 123-456-789" name="tel" id="tel" required autocomplete="off" placeholder="Número de teléfono">
+      </div>
+      <div class="form-contact">
+        <label for="github-user">Github username</label>
+        <input
+          type="text"
+          name="github-user"
+          id="github-user"
+          placeholder="Con este formato (@<username>)"
+          pattern="^@[^\s]+"
+          title="Use el formato @<username> sin espacios"
+        >
+      </div>
+      <div class="form-contact">
+        <label for="how">¿Cómo me conociste?</label>
+        <fieldset>
+          <legend hidden>Elige una opción</legend>
+          <label for="university" tabindex="0">Universidad</label>
+          <input type="radio" name="how-met" id="university" value="university" required>
+          <label for="kc-kick-off" tabindex="0">Keepcoding kick-off</label>
+          <input type="radio" name="how-met" id="kc-kick-off" value="keepcoding-kick-off">
+          <label for="school" tabindex="0">Colegio</label>
+          <input type="radio" name="how-met" id="school" value="school">
+          <label for="github" tabindex="0">Github</label>
+          <input type="radio" name="how-met" id="github" value="github">
+        </fieldset>
+      </div>
+      <div class="form-contact">
+        <label for="info">Más información</label>
+        <textarea name="info" id="info" required placeholder="Qué más quieres saber" rows="10" maxlength="180" title="Máximo 180 caracteres"></textarea>
+      </div>
+      <div class="form-contact">
+        <input type="checkbox" name="newsletter" id="newsletter">
+        <label for="newsletter">Quiero acceso a la newsletter</label>
+      </div>
+      <div>
+        <button class="btn-submit" type="submit" id="submit">Enviar</button>
+        <button class="btn-reset" type="reset" id="reset">Reset</button>
+      </div>
+    </form>  
   </main>
   
   <footer class="footer">
