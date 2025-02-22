@@ -14,13 +14,13 @@
     padding: 2em;
     display: flex;
     border-radius: 25%;
-    max-width: 250px;
-    max-height: 2000px;
+    max-width: 350px;
+    max-height: 200px;
   }
 }
 .title {
   padding: 10px;
-  text-align: ce;
+  text-align: center;
   color: white;
   font-size: 2em;
   margin: 0 auto;
