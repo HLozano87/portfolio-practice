@@ -1,22 +1,20 @@
 form {
   border-radius: 8px;
-  padding: 2em 2em ;
+  padding: 2em 1em ;
+  input, textarea {
+    border-radius: 4px;
+  }
 }
 .container-form {
   font-weight: 600;
-  font-size: 1em;
-  /* color: burlywood; */
   box-shadow: #998585 0px 0px 10px;
-  label {
-    padding-bottom: 5px;
-  }
 }
 .form-contact {
   margin-bottom: 10px;
-  padding: 10px;
+  padding: 5px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 5px;
   fieldset {
     font-weight: 200;
     margin: 0;
@@ -33,7 +31,7 @@ form {
 }
 .form-contact.newsletter {
   font-weight: 100;
-  margin: 0 0 2em 10px ;
+  margin: 0 0 1em 5px ;
   padding: 0;
   display: flex;
   flex-direction: row;
@@ -51,12 +49,13 @@ form {
   gap: 20px;
 }
 
-
-/* .data {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 15px;
-  span, label {
-    margin-bottom: 10px;
+/* @media screen and (width > 768px){
+  span.data {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+  }
+  form {
+    margin-bottom: 2rem;
   }
 } */

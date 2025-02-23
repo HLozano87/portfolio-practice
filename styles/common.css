@@ -42,13 +42,14 @@ a:hover {
 button {
   margin: 0;
   border-style: none;
-  font-size: 20px;
-  padding: 0 auto;
+  text-decoration: none;
+  font-size: 1em;
+  padding: 6px 10px;
   background-color: var(--main-btn-color);
   color: var(--bg-color);
   border: 3px groove var(--border-color);
-  border-radius: 5px;
-  transition: var(--btn-transition);
+  border-radius: 8px;
+  transition-property: all 0.9s linear var(--btn-transition);
   cursor: pointer;
   &.btn-reset {
     background-color: var(--bg-color);
@@ -80,17 +81,6 @@ footer img {
 * {
   box-sizing: border-box;
 }
-
-/* 
-@media screen and ( width > 768px ) {
-  body {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    max-width: 500px;
-    margin: 0 auto;    
-  }
-} */
 
 /* @media screen and (width > 768px) {
   .main {
