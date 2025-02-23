@@ -1,7 +1,9 @@
 form {
   border-radius: 8px;
   padding: 2em 1em ;
-  input, textarea {
+  textarea, input {
+    border: 2px groove var(--border-color);
+    padding: 5px;
     border-radius: 4px;
   }
 }
@@ -15,47 +17,47 @@ form {
   display: flex;
   flex-direction: column;
   gap: 5px;
-  fieldset {
-    font-weight: 200;
-    margin: 0;
-    padding: 0;
-    border: none;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 10px;
-    legend {
-      display: none;
-    }
+}
+fieldset {
+  font-weight: 200;
+  margin: 0;
+  padding: 0;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-items: start;
+  align-content: center;
+  gap: 10px;
+  legend {
+    display: none;
   }
+  
+}
+input[type='radio'] {
+  accent-color: var(--main-hover-color-light);
+  cursor: pointer;
 }
 .form-contact.newsletter {
   font-weight: 100;
-  margin: 0 0 1em 5px ;
+  margin: 0 0 1em 5px;
   padding: 0;
   display: flex;
   flex-direction: row;
   justify-content: start;
   align-items: center;
   gap: 10px;
-  label {
-    padding: 0;
-  }
 }
-.btn {
+.btn-actions {
   display: flex;
   justify-content: start;
   align-items: center;
   gap: 20px;
 }
 
-/* @media screen and (width > 768px){
-  span.data {
+@media screen and ( width > 768px ) {
+  .data {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 15px;
+    gap: 10px;
   }
-  form {
-    margin-bottom: 2rem;
-  }
-} */
+}

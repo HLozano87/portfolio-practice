@@ -21,13 +21,13 @@
       <nav class="nav-container">
         <ul class="lister">
           <li>
-            <a href="#proyects">Proyects</a>
+            <a href="#proyects">Proyectos</a>
           </li>
           <li>
             <a href="#skills">Skills</a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="#contact">Contacto</a>
           </li>
         </ul>
       </nav>
@@ -64,19 +64,23 @@
       <h3 class="heading-3">Contacto</h3>
       <form class="container-form" for="./contact" id="contact" method="post" novalidate>
         <span class="data">
-          <div class="form-contact data label">
+
+          <div class="form-contact">
             <label for="name">Nombre</label>
             <input type="text" pattern="^[a-zA-Z]+(?:\s[a-zA-Z]+)*$" title="Formatos admitidos: 'Jose o Jose Antonio'" name="name" id="name" required placeholder="Pon tu nombre">
           </div>
-          <div class="form-contact data">
+
+          <div class="form-contact">
             <label for="surname">Apellido</label>
             <input type="text" pattern="^[a-zA-Z]+(?:\s[a-zA-Z]+)*$" title="Formatos admitido: 'Perez' o 'Perez Gomez'" name="surname" id="surname" required placeholder="Pon tu apellido">
           </div>
-          <div class="form-contact data">
+
+          <div class="form-contact">
             <label for="tel">Teléfono</label>
             <input type="tel" pattern="^\+[0-9]{3}\s[0-9]{3}-[0-9]{3}-[0-9]{3}$" title="Formato: +000 123-456-789" name="tel" id="tel" required autocomplete="off" placeholder="Número de teléfono">
           </div>
-          <div class="form-contact data">
+
+          <div class="form-contact">
             <label for="github-user">Github username</label>
             <input
             type="text"
@@ -86,42 +90,48 @@
             pattern="^@[^\s]+"
             title="Use el formato @<username> sin espacios"
             >
-            </div>
+          </div>
         </span>
-            <div class="form-contact">
-              <label for="how">¿Cómo me conociste?</label>
-              <fieldset>
-                <legend>Elige una opción</legend>
-                <span>
-                  <label for="university">Universidad</label>
-                  <input type="radio" name="how-met" id="university" value="university" required>
-                </span>
-                <span>
-                  <label for="kc-kick-off">Keepcoding kick-off</label>
-                  <input type="radio" name="how-met" id="kc-kick-off" value="keepcoding-kick-off">
-                </span>
-                <span>
-                  <label for="school">Colegio</label>
-                  <input type="radio" name="how-met" id="school" value="school">
-                </span>
-                <span>
-                  <label for="github">Github</label>
-                  <input type="radio" name="how-met" id="github" value="github">
-                </span>
-              </fieldset>
-            </div>
-            <div class="form-contact">
-              <label for="info">Más información</label>
-              <textarea name="info" id="info" required placeholder="Qué más quieres saber" rows="10" maxlength="180" title="Máximo 180 caracteres"></textarea>
-            </div>
-            <div class="form-contact newsletter">
-              <input type="checkbox" name="newsletter" id="newsletter">
-              <label for="newsletter">Quiero acceso a la newsletter</label>
-            </div>
-            <div class="btn">
-              <button class="btn-submit" type="submit" id="submit">Enviar</button>
-              <button class="btn-reset" type="reset" id="reset">Reset</button>
-            </div>
+        <div class="form-contact">
+          <label for="how-met">¿Cómo me conociste?</label>
+          <fieldset class="form-contact">
+            <legend>Elige una opción</legend>
+
+            <label for="university">
+              Universidad
+              <input type="radio" name="how-met" id="university" value="university" required>
+            </label>
+            <label for="kc-kick-off">
+              Keepcoding kick-off
+              <input type="radio" name="how-met" id="kc-kick-off" value="keepcoding-kick-off">
+            </label>
+
+            <label for="school">
+              Colegio
+              <input type="radio" name="how-met" id="school" value="school">
+            </label>
+
+            <label for="github">
+              Github
+              <input type="radio" name="how-met" id="github" value="github">
+            </label>
+          </fieldset>
+        </div>
+
+        <div class="form-contact">
+          <label for="info">Más información</label>
+          <textarea name="info" id="info" required placeholder="Qué más quieres saber" rows="10" maxlength="180" title="Máximo 180 caracteres"></textarea>
+        </div>
+
+        <div class="form-contact newsletter">
+          <input type="checkbox" name="newsletter" id="newsletter">
+          <label for="newsletter">Quiero acceso a la newsletter</label>
+        </div>
+
+        <div class="btn-actions">
+          <button class="btn-submit" type="submit">Enviar</button>
+          <button class="btn-reset" type="reset">Reset</button>
+        </div>
       </form>  
     </section>
   </main>

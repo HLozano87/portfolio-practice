@@ -35,7 +35,7 @@ a {
 a:hover {
   background-color: var(--main-hover-color-light);
   transform: scale(1.1);
-  border: 2px s var(--main-btn-color);
+  border: 2px solid var(--main-btn-color);
   border-style: none;
 }
 
@@ -82,8 +82,8 @@ footer img {
   box-sizing: border-box;
 }
 
-/* @media screen and (width > 768px) {
+@media screen and (width > 768px) {
   .main {
-    max-width: 1200px;
+    max-width: 1024px;
   }
-} */
+}
