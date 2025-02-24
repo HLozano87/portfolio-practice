@@ -1,0 +1,35 @@
+.skills {
+  width: 100%;
+  padding-bottom: 1rem;
+}
+.progress-bar {
+  width: 100%;
+  text-align: end;
+  background-color: var(--bg-color);
+  border-radius: 10px;
+  margin-bottom: 3px;
+  border: 2px groove rgb(87, 75, 75);
+  padding: 2px;
+}
+
+.progress {
+  height: 20px;
+  background: linear-gradient(90deg, #d17b13bb, #8bc34a);
+  border-radius: 15px;
+  animation: skills-progress 3s ease-in-out forwards;
+}
+
+@keyframes skills-progress {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: var(--progress);
+  }
+}
+.js[data-progress="50"] { --progress: 50%; }
+.python[data-progress="45"] { --progress: 45%; }
+.html[data-progress="80"] { --progress: 80%; }
+.css[data-progress="60"] { --progress: 60%; }
+.git[data-progress="75"] { --progress: 75%; }
+.ts[data-progress="35"] { --progress: 35%; }
