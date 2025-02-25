@@ -12,6 +12,15 @@
   font-family: Verdana, Tahoma, sans-serif;
   font-size: 16px;
 }
+.sr-only:not(:focus):not(:active) {
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
+}
 
 .main-bg {
   background-color: var(--bg-color);
@@ -22,6 +31,8 @@
   width: 90%;
   margin: 0 auto;
   max-width: 768px;
+  min-height: 100vh;
+  padding: 1rem;
 }
 
 a {
@@ -85,5 +96,22 @@ footer img {
 @media screen and (width > 768px) {
   .main {
     max-width: 1024px;
+  }
+}
+
+@media screen and ( width > 1024px ) { 
+  .main {
+    max-width: 1200px;
+  }
+}
+
+@media screen and ( width > 1280px ) {
+  .main {
+    max-width: 1400px;
+  }
+}
+@media screen and ( width > 1920px ) {
+  .main {
+    max-width: 1600px;
   }
 }
