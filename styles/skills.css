@@ -2,6 +2,16 @@
   width: 100%;
   padding-bottom: 1rem;
 }
+.skills span {
+  display: block;
+  font-weight: 200;
+  padding-bottom: 5px;
+}
+.list-skills {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 .progress-bar {
   width: 100%;
   text-align: end;
@@ -37,3 +47,19 @@
 .css[data-progress="60"] { --progress: 60%; }
 .git[data-progress="75"] { --progress: 75%; }
 .ts[data-progress="35"] { --progress: 35%; }
+
+@media screen and (width > 768px) {
+  .list-skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
+@media screen and ( width > 1024px ) {
+  .list-skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+  }
+}
