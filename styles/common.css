@@ -6,8 +6,6 @@
   --main-hover-color-light: #cc7d29;
   --footer-text-color: #27292181;
   --border-color: #dbd764;
-  --btn-transition: all 0.2 ease-in-out;
-  --btn-active-transform: scale(.92);
   --btn-border: 3px groove var(--main-btn-color);
   font-family: Verdana, Tahoma, sans-serif;
   font-size: 16px;
@@ -39,20 +37,16 @@ a {
   padding: 2px;
   margin: 0;
   text-decoration: none;
-  color: var(--main-btn-color);
   border-radius: 5px;
-  transition: var(--btn-transition);
+  transition: transform ease-in-out 0.4s;
 }
 a:hover {
-  background-color: var(--main-hover-color-light);
+  background-color: var(--border-color);
   transform: scale(1.1);
-  border: 2px solid var(--main-btn-color);
-  border-style: none;
 }
 
 button {
   margin: 0;
-  border-style: none;
   text-decoration: none;
   font-size: 1em;
   padding: 6px 10px;
@@ -60,20 +54,25 @@ button {
   color: var(--bg-color);
   border: 3px groove var(--border-color);
   border-radius: 8px;
-  transition-property: all 0.9s linear var(--btn-transition);
-  cursor: pointer;
+  transition: transform ease-in-out 0.4s, background-color 0.4s ease-in-out;
+  
   &.btn-reset {
     background-color: var(--bg-color);
     color: var(--main-text-color);
   }
+  &.btn-reset:hover {
+    background-color: rgb(255, 255, 255);
+    color: red;
+  }
 }
 button:hover {
-  transition: var(--btn-transition);
-  background-color: var(--main-hover-color-light);
+  transform: scale(1.1);
+  background-color: rgb(182, 226, 115);
+  color: black;
   border: var(--btn-border);
 }
 button:active {
-  transform: var(--btn-active-transform);
+  transform: scale(.8);
 }
 
 p {
