@@ -9,11 +9,11 @@
     align-items: center;
     gap: 20px;
   }
-  a {
-    border-radius: 50px;
-  }
 }
-img {
+.footer a {
+  border-radius: 50px;
+}
+.footer img {
   padding: 0;
   margin: 0;
   border-radius: 50%;
