@@ -46,10 +46,11 @@ a:hover {
 }
 
 button {
-  margin: 0;
-  text-decoration: none;
+  min-width: 20%;
+  max-width: 25%;
+  padding: 10px;
+  margin: 10px;
   font-size: 1em;
-  padding: 6px 10px;
   background-color: var(--main-btn-color);
   color: var(--bg-color);
   border: 3px groove var(--border-color);
