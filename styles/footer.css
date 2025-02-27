@@ -2,12 +2,21 @@
   text-align: center;
   font-style: italic;
   color: var(--footer-text-color);
-  padding: 1em;
   .socials {
-    padding-bottom: 1em;
+    padding: 1em;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 20px;
   }
+  a {
+    border-radius: 50px;
+  }
+}
+img {
+  padding: 0;
+  margin: 0;
+  border-radius: 50%;
+  border: 2px groove var(--border-color);
+  box-shadow: black 0px 0px 10px;
 }
