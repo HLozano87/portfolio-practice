@@ -1,75 +1,62 @@
-figure { 
-  margin: 0;
-  padding: 2rem;
-}
-.banner {
+.container-banner {
   width: 100%;
+  height: 350px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
-  padding: 0;
-  padding-top: 2rem;
-  .imagen {
-    background-color: var(--bg-color);
-    background-image: url('../assets/app/bg-banner.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: absolute;
-    /* inset: 0; equivalente para top:0, right:0, bottom:0, left:0 */
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    opacity: 0.3;
-    z-index: -1;
-  }
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+.container-banner a {
+  padding: 5px;
+  margin: 0;
+  text-decoration: none;
+  color: rgb(26, 33, 169);
+  font-size: 1.5rem;
+  font-weight: 600;
+  border-radius: 15px;
+}
+.container-banner.banner {
+  /* background-image: url('../assets/app/bg-banner.jpg');
+  background-size: cover;
+  background-repeat: no-repeat; */
+  /* background-position: center; */
+  width: 100%;
+  height: 100%;
+}
+.container-banner .banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  opacity: 0.6;
+  overflow: hidden;
 }
 
-.list-portfolio {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); */
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
-  justify-content: center;
-  img {
-    border: 5px groove var(--border-color);
-    width: 100%;
-    box-shadow:rgb(0, 0, 0) 0px 0px 10px;
-    transition: transform 0.4s ease-in-out;
-    margin-bottom: 10px;
-    border-radius: 15px;
+@media screen and (width > 538px) {
+  .container-banner {
+    height: 30vh;
   }
-}
-.list-portfolio img:hover {
-  box-shadow: #370606 0px 0px 20px;
-  transform: scale(1.1);
-  cursor: pointer;
-}
-.name-proyect {
-  font-weight: 200;
-  margin: 0;
-  padding: 0;
 }
 
 @media screen and ( width > 768px) {
-  .list-portfolio {
-    grid-template-columns: repeat(3, 1fr);
-    img {
-      max-width: 200px;
-    }
+  .container-banner {
+    height: 35vh;
   }
 }
-
-@media screen and ( width > 1024px ) {
-  .list-portfolio {
-    grid-template-columns: repeat(3, 1fr);
-    img {
-      max-width: 250px;
-    }
+@media screen and ( width > 1113px) {
+  .container-banner {
+    height: 40vh;
+  }
+}
+@media screen and ( width > 1388px) {
+  .container-banner {
+    height: 45vh;
   }
 }
