@@ -15,19 +15,25 @@
 <body class="main-bg">
   <header class="header">
     <div class="logo-header">
-      <img src="./assets/desing/img-avatar.jpg" alt="avatar">
+      <a href="/"><img src="./assets/desing/img-avatar.jpg" alt="avatar"></a>
       <h1 class="title">H. Lozano</h1>
     </div>
-    <section class="container-header">
-      <nav class="navbar">
-        <ul class="navbar-list">
-          <li><a href="#proyects">Proyectos</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contacto</a></li>
-        </ul>
-      </nav>
-      <button class="menu-btn">Menu</button>
-    </section>
+
+    <input type="checkbox" class="menu-toggle" name="menu-toggle" id="menu-toggle">
+    <label for="menu-toggle" class="menu-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#dbd764">
+        <path d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z" />
+      </svg>
+    </label>
+    <!-- <div class="menu-overlay"></div> -->
+    <!-- <button class="menu-btn">Menu</button> -->
+    <nav class="navbar">
+      <ul class="navbar-list">
+        <li><a href="#proyects">Proyectos</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
   </header>
   <hr>
 
@@ -136,7 +142,7 @@
           ./assets/app/bg-responsive/bg-banner_jdjmcr_ar_4_3,c_fill,g_auto__c_scale,w_1114.jpg 1114w,
           ./assets/app/bg-responsive/bg-banner_jdjmcr_ar_4_3,c_fill,g_auto__c_scale,w_1388.jpg 1388w"
             src="./assets/app/bg-responsive/bg-banner.jpg" alt="">
-          </picture>
+        </picture>
       </div>
     </section>
     <section class="form" id="contact">
