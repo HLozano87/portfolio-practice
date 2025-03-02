@@ -15,6 +15,9 @@
   input[type='text']:focus, input[type='tel']:focus, textarea:focus {
     box-shadow: #127f2b 0px 0px 8px;
   }
+  input[type='checkbox'] {
+    accent-color: rgb(29, 159, 29);
+  }
 }
 .required {
   font-weight: 600;
