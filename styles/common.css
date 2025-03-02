@@ -7,7 +7,7 @@
   --footer-text-color: #27292181;
   --border-color: #dbd764;
   --btn-border: 3px groove var(--main-btn-color);
-  font-family: Verdana, Tahoma, sans-serif;
+  --fuente-principal: 'Roboto', sans-serif;
   font-size: 16px;
 }
 .sr-only:not(:focus):not(:active) {
@@ -23,6 +23,7 @@
 .main-bg {
   background-color: var(--bg-color);
   color: var(--main-text-color);
+  font-family: var(--fuente-principal);
 }
 
 .main {
