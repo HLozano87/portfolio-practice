@@ -1,15 +1,38 @@
+.main {
+  animation: fadein-page 2s ease;
+}
+@keyframes fadein-page {
+  0% {
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
 .fade-container {
   padding: 0;
   margin: 0;
-  max-width: 100%;
   margin-bottom: 20px;
 }
-.fade-in video{
-  width: 100%;
+.fade-in {
+  display: flex;
+  justify-content: center;
+}
+.fade-in video {
+  width: 80%;
   display: block;
-  border-radius: 5px;
-  animation: fadeIn 3s ease;
-
+  border-radius: 15px;
+  animation: fadein 4s ease-in forwards;
+}
+@keyframes fadein {
+  from {
+    width: 0%;
+    opacity: 0;
+  }
+  to {
+    width: 80%;
+    opacity: 1;
+  }
 }
 .list-portfolio.fade-container video{
   position: absolute;
@@ -18,17 +41,7 @@
   right: 0;
   left: 0;
   background-size: cover;
-
 }
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 .container-iframe {
   display: flex;
   justify-content: center;
