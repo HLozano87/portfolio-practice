@@ -38,6 +38,15 @@
   opacity: 0.6;
   overflow: hidden;
 }
+.link-portfolio {
+  animation: portfolio infinite 2s ease-in-out;
+}
+@media screen and (prefers-reduced-motion: no-preference) {
+  
+  @keyframes portfolio {
+    50% { transform: translateY(30px); }
+  }
+}
 
 @media screen and (width > 538px) {
   .container-banner {

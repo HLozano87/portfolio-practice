@@ -27,12 +27,6 @@
     align-items: center;
   } */
 }
-.link-portfolio {
-  animation: portfolio infinite 2s ease-in-out;
-}
-@keyframes portfolio {
-  50% { transform: translateY(30px); }
-}
 .name-proyect {
   text-align: center;
   font-weight: 200;

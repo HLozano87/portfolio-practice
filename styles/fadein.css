@@ -13,14 +13,17 @@
   border-radius: 15px;
   animation: fadein 4s ease-in forwards;
 }
-@keyframes fadein {
-  from {
-    width: 0%;
-    opacity: 0;
-  }
-  to {
-    width: 80%;
-    opacity: 1;
+@media screen and (prefers-reduced-motion: no-preference) {
+
+  @keyframes fadein {
+    from {
+      width: 0%;
+      opacity: 0;
+    }
+    to {
+      width: 80%;
+      opacity: 1;
+    }
   }
 }
 .list-portfolio.fade-container video{
@@ -31,6 +34,7 @@
   left: 0;
   background-size: cover;
 }
+
 .container-iframe {
   display: flex;
   justify-content: center;

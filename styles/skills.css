@@ -36,13 +36,21 @@
   width: 25px;
   height: 20px;
 }
-
-@keyframes skills-progress {
-  0% {
-    width: 1%;
-  }
-  100% {
+@media screen and (prefers-reduced-motion: reduce) {
+  .progress {
+    animation: none;
     width: var(--progress);
+  }
+}
+@media screen and (prefers-reduced-motion: no-preference) {
+
+  @keyframes skills-progress {
+    0% {
+      width: 1%;
+    }
+    100% {
+      width: var(--progress);
+    }
   }
 }
 .js[data-progress="50"] { --progress: 50%; }

@@ -35,12 +35,15 @@
 .main {
   animation: fadein-page 4s ease;
 }
-@keyframes fadein-page {
-  0% {
-    opacity: 0;
-  }
-  100%{
-    opacity: 1;
+@media screen and (prefers-reduced-motion: no-preference) {
+
+  @keyframes fadein-page {
+    0% {
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
   }
 }
 
