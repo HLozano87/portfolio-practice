@@ -3,7 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+  <title>Portfolio H. Lozano</title>
+  <meta property="og:title" content="Portfolio H.Lozano">
+  <meta property="og:description" content="Portfolio H.Lozano - Practice Keepcoding HTML & CSS">
+  <meta property="og:image" content="https://github.com/HLozano87/portfolio-practice/blob/main/assets/app/bg-responsive/bg-banner.jpg?raw=true">
+  <link rel="icon" href="./assets/app/favicon/favicon.png" type="image/png">
   <link rel="stylesheet" href="./styles/normalize.css">
   <link rel="stylesheet" href="./styles/common.css">
   <link rel="stylesheet" href="./styles/header.css">
@@ -34,13 +38,25 @@
       </ul>
     </nav>
   </header>
-  <hr>
+  <hr class="hr">
 
   <main class="main">
     <section class="bio" id="bio">
       <div>
         <h2>Bio</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel architecto debitis voluptate! Velit, ipsum sapiente, perferendis officia a exercitationem repellat accusamus cupiditate facere sunt nisi nemo temporibus dolores iure necessitatibus.</p>
+        <p>Hola, soy H. Lozano <span aria-label="guiño y saludo">😉✌️</span> y soy como habrás podido notar, estoy siguiendo el camino del desarollo web. Me encanta la tecnología, las motos, el cine y el anime {<i> sí, lo sé, los "informáticos" tenemos fama de frikis</i> <span aria-label="pensativo">🤔</span> };<br> 
+          Bueno, le he puesto mucho cariño a esta página y aunque sé que no debería decir esto, lo haré igualmente... tiene muchas cosas que se pueden mejorar, pero nadie dijo que el conocimiento se adquiera de un día para otro, y sino que nos lo digan a nosotros cuando veíamos antes páginas planas, cuando el router de tu casa sonaba para conectarte a internet rezando para que nadie levantara el teléfono.<span aria-label="risa">😂</span><br>
+          El origen de una buena formación
+          <a href="/proyects.html#articulo">
+            <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="16px" fill="#000000">
+              <path d="M630-444H192v-72h438L429-717l51-51 288 288-288 288-51-51 201-201Z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" height="16px" viewBox="0 -960 960 960" width="16px" fill="#000000">
+              <path
+              d="M444-288h72v-240h-72v240Zm35.79-312q15.21 0 25.71-10.29t10.5-25.5q0-15.21-10.29-25.71t-25.5-10.5q-15.21 0-25.71 10.29t-10.5 25.5q0 15.21 10.29 25.71t25.5 10.5Zm.49 504Q401-96 331-126t-122.5-82.5Q156-261 126-330.96t-30-149.5Q96-560 126-629.5q30-69.5 82.5-122T330.96-834q69.96-30 149.5-30t149.04 30q69.5 30 122 82.5T834-629.28q30 69.73 30 149Q864-401 834-331t-82.5 122.5Q699-156 629.28-126q-69.73 30-149 30Zm-.28-72q130 0 221-91t91-221q0-130-91-221t-221-91q-130 0-221 91t-91 221q0 130 91 221t221 91Zm0-312Z" />
+            </svg>
+          </a>
+        </p>    
       </div>
     </section>
     <section class="skills" id="skills">
@@ -48,8 +64,8 @@
       <div>
         <ul class="list-skills">
           <li>
-            <span>JavaScript</span>
-            <div class="progress-bar" aria-label="barra de progreso JavaScript 50%">
+            <span class="sr-only">JavaScript</span>
+            <div class="progress-bar" aria-label="barra de progreso JavaScript 50%" title="50%">
               <div class="progress js" data-progress="50"><svg class="icon-progress" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
                 <path fill="#ffd600" d="M6,42V6h36v36H6z"></path>
                 <path fill="#000001"
@@ -60,7 +76,7 @@
             </div>
           </li>
           <li>
-            <span>Python</span>
+            <span class="sr-only">Python</span>
             <div class="progress-bar" aria-label="barra de progreso python 45%">
               <div class="progress python" data-progress="45"><svg class="icon-progress" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
                 <path fill="#0277BD"
@@ -74,7 +90,7 @@
             </div>
           </li>
           <li>
-            <span>HTML</span>
+            <span class="sr-only">HTML</span>
             <div class="progress-bar" aria-label="barra de progreso HTML 80%">
               <div class="progress html" data-progress="80"><svg class="icon-progress" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
                 <path fill="#E65100" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path>
@@ -87,7 +103,7 @@
             </div>
           </li>
           <li>
-          <span>CSS</span>
+          <span class="sr-only">CSS</span>
             <div class="progress-bar" aria-label="barra de progreso CSS 60%">
               <div class="progress css" data-progress="60"><svg class="icon-progress" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
                 <path fill="#0277BD" d="M41,5H7l3,34l14,4l14-4L41,5L41,5z"></path>
@@ -102,7 +118,7 @@
             </div>
           </li>
           <li>
-            <span>Git</span>
+            <span class="sr-only">Git</span>
             <div class="progress-bar" aria-label="barra de progreso Git 75%">
               <div class="progress git" data-progress="75"><svg class="icon-progress" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
                 <path fill="#F4511E"
@@ -113,7 +129,7 @@
             </div>
           </li>
           <li>
-            <span>TypeScript</span>
+            <span class="sr-only">TypeScript</span>
             <div class="progress-bar" aria-label="barra de progreso React 35%">
               <div class="progress ts" data-progress="35"><svg class="icon-progress" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
                 <rect width="36" height="36" x="6" y="6" fill="#1976d2"></rect>
@@ -133,7 +149,9 @@
     <section class="container-banner" id="proyects">
       <h2 class="heading-2 sr-only">Portfolio</h2>
       <div class="banner">
-        <div><a href="./proyects.html">Portfolio</a></div>
+        <div class="link-portfolio">
+          <a href="./proyects.html">Portfolio</a>
+        </div>
 
         <picture aria-label="imagen de un banner del escritorio de un desarrollador">
           <img sizes="(max-width: 1983px) 70vw, 1388px" srcset="

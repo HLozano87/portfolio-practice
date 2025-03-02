@@ -2,15 +2,19 @@
   width: 100%;
   padding-bottom: 1rem;
 }
-.skills span {
+/* Se comenta por poner los titulos de las barras de progreso ocultas */
+/* .skills span {
   display: block;
   font-weight: 200;
   padding-bottom: 5px;
-}
+} */
 .list-skills {
   margin: 0;
   padding: 0;
   list-style: none;
+}
+.list-skills li {
+  padding: 3px;
 }
 .progress-bar {
   width: 100%;

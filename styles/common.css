@@ -32,6 +32,17 @@
   min-height: 100vh;
   padding: 1rem;
 }
+.main {
+  animation: fadein-page 4s ease;
+}
+@keyframes fadein-page {
+  0% {
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
 
 a {
   display: inline-block;

@@ -10,6 +10,14 @@
   align-items: center;
   gap: 10px;
 }
+.hr {
+  width: 100%;
+  border: none;
+  margin: 0;
+  border-top: 3px groove #dbd764;
+  position: fixed;
+  z-index: 0;
+}
 
 .logo-header img {
   display: flex;
@@ -20,6 +28,9 @@
   border-radius: 50%;
   max-width: 85px;
   max-height: 85px;
+}
+.logo-header a {
+  display: inline;
 }
 
 .title {

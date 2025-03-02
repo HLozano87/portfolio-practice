@@ -1,14 +1,3 @@
-.main {
-  animation: fadein-page 2s ease;
-}
-@keyframes fadein-page {
-  0% {
-    opacity: 0;
-  }
-  100%{
-    opacity: 1;
-  }
-}
 .fade-container {
   padding: 0;
   margin: 0;
