@@ -27,7 +27,7 @@
     align-items: center;
   } */
 }
-.name-proyect {
+.name-project {
   text-align: center;
   font-weight: 200;
   font-size: 12px;
@@ -67,7 +67,7 @@
   .list-portfolio img {
       max-width: 350px;
   }  
-  .name-proyect {
+  .name-project {
       font-size: 1rem;
   }
 }
